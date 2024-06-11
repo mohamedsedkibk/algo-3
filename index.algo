@@ -1,0 +1,61 @@
+Given an array of integers, find the maximum and minimum elements.
+// ALGORITHM find
+// VAR
+//     tab : ARRAY_OF integer[n];
+//     max ,min :Integer
+// BEGIN
+//  min:=tab[0]
+//  max:=tab[0]
+// FOR i FROM 0 TO tab.length-1 STEP 1  DO
+//  Read(tab[i])
+// END_FOR
+//    FOR i FROM 0 TO tab.length-1 STEP 1  DO
+// IF (tab[i]>max) THEN
+//     max:=tab[i]
+// END_IF
+// IF (tab[i]<min) THEN
+//     min:=tab[i]
+// END_IF
+// END_FOR
+//  write(min,max)
+// END
+Write a program to implement a Linear Search Algorithm?
+// ALGORITHM SEARCH
+// VAR
+//     tab : ARRAY_OF integer[n];
+//     a:Integer
+//     found:BOOLEAN:=false
+// BEGIN
+// Read(a)
+
+// FOR i FROM 0 TO n-1 STEP 1  DO
+//     IF (tab[i]==a) THEN
+//         found:=true
+
+//     END_IF
+// END_FOR
+// IF (found==true) THEN
+//   write ("i found a")
+// ELSE
+//     write("a not found")
+// END_IF
+// END
+
+FUNCTION find(TAB : ARRAY_OF Integer[n];num:Integer) : Integer
+VAR
+    set_declarations
+BEGIN
+    FOR i FROM 0 TO n-1 STEP 1  DO
+    IF (tab[i]==num) THEN
+        RETURN i
+    END_IF
+    END_FOR
+    RETURN -1
+   
+END
+ALGORITHM algorithm_name
+VAR
+    a:Integer
+BEGIN
+    a:=find([0,1,2,3,4,5,6],6)
+END
